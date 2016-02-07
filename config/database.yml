@@ -1,0 +1,20 @@
+
+development:
+  adapter: postgresql
+  encoding: unicode 
+  pool: 5
+  database: cap-deploy_development
+  username: pguser
+  password: root
+  host: localhost
+  port: 5432
+
+
+# test:
+#   database: cap-deploy_test
+
+
+production:  
+  database: cap-deploy_production
+  username: cap-deploy
+  password: <%= ENV['CAP-DEPLOY_DATABASE_PASSWORD'] %>
